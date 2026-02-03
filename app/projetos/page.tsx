@@ -1,8 +1,15 @@
+"use client";
+import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 
 export default function Projetos() {
   return (
-    <section className="space-y-6">
+    <motion.section
+      initial={{ y: 24, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="space-y-6"
+    >
       <h2 className="text-3xl font-bold">Projetos</h2>
 
       <ProjectCard
@@ -16,6 +23,6 @@ export default function Projetos() {
         description="Aplicação para visualização e gerenciamento de dados com autenticação e controle de acesso."
         techs={["React", "JWT", "PostgreSQL"]}
       />
-    </section>
+    </motion.section>
   );
 }
