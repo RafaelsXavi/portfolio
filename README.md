@@ -37,6 +37,14 @@ pnpm dev
 - Código limpo, organizado e pronto para evolução
 - Foco em UX/UI para mercado tech
 
+## 📦 Clone este portfólio
+
+Para clonar este portfólio:
+
+```bash
+git clone https://github.com/RafaelsXavi/portfolio.git
+```
+
 ## 📷 Preview
 
 ![preview](public/preview.png)
