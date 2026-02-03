@@ -8,9 +8,9 @@ export default function Contato() {
       </p>
 
       <ul className="space-y-2">
-        <li>Email: seuemail@email.com</li>
-        <li>GitHub: github.com/seuusuario</li>
-        <li>LinkedIn: linkedin.com/in/seuperfil</li>
+        <li>Email: Rafael.xavi277@gmail.com</li>
+        <li>GitHub: https://github.com/RafaelsXavi</li>
+        <li>LinkedIn: https://www.linkedin.com/in/rafaels-xavier/</li>
       </ul>
     </section>
   );
