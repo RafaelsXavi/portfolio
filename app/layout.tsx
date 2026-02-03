@@ -18,9 +18,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfólio | Desenvolvedor Full Stack",
-  description: "Portfólio profissional de desenvolvedor full stack",
+  title: "Rafael | Desenvolvedor Full Stack",
+  description:
+    "Portfólio profissional de Rafael, desenvolvedor full stack especializado em aplicações web modernas.",
 };
+
 
 export default function RootLayout({
   children,
