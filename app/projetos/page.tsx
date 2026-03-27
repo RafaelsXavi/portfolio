@@ -15,17 +15,36 @@ export default function Projetos() {
         <div className="h-1 w-20 bg-emerald-500 rounded-full" />
       </div>
 
-      <div className="grid gap-6">
+      <div className="grid gap-8 md:grid-cols-2">
         <ProjectCard
-          title="Plataforma de Automação de Conteúdo"
-          description="Sistema full stack para geração e publicação automática de conteúdo, com integração de APIs externas. Focado em produtividade e consistência."
-          techs={["Next.js", "Node.js", "APIs", "Cloud"]}
+          title="SaborReal Delivery"
+          status="Produção"
+          description="Plataforma fullstack de delivery com rastreio em tempo real, cálculo de frete dinâmico e gestão de pedidos para entregadores."
+          techs={["Next.js", "Node.js", "PostgreSQL", "Prisma", "Tailwind"]}
+          githubUrl="https://github.com/RafaelsXavi"
         />
 
         <ProjectCard
-          title="Dashboard de Gestão"
-          description="Aplicação de alta performance para visualização e gerenciamento de dados complexos com autenticação robusta e controle granular."
-          techs={["React", "JWT", "PostgreSQL", "Tailwind"]}
+          title="DevBurguer"
+          status="Produção"
+          description="E-commerce para hamburgueria com fluxo completo de checkout, integração de pagamentos e painel administrativo para controle de estoque."
+          techs={["React", "Node.js", "Express", "MongoDB", "Stripe"]}
+          githubUrl="https://github.com/RafaelsXavi"
+        />
+
+        <ProjectCard
+          title="A gente clinica"
+          status="MVP"
+          description="Sistema de automação para agendamentos de consultas. Integração de formulários, Google Calendar e Notion via N8N."
+          techs={["N8N", "Google Cloud", "Notion", "APIs"]}
+        />
+
+        <ProjectCard
+          title="Dashboard de Gestão BI"
+          status="Estudo"
+          description="Interface de alta performance para monitoramento de KPIs em tempo real, com filtros dinâmicos e exportação de relatórios."
+          techs={["React", "Recharts", "Zustand", "Context API"]}
+          githubUrl="https://github.com/RafaelsXavi"
         />
       </div>
     </motion.section>

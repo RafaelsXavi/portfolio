@@ -45,6 +45,51 @@ export default function Sobre() {
           ecossistema React, Next.js e Node.js.
         </motion.p>
       </div>
+
+      <div className="space-y-8 pt-8">
+        <div className="space-y-2">
+          <h3 className="text-2xl font-bold text-white uppercase tracking-tight">Habilidades & Stack</h3>
+          <p className="text-zinc-500 text-sm italic">O que utilizo para dar vida às ideias</p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2">
+          {[
+            {
+              category: "Frontend",
+              skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Zustand"]
+            },
+            {
+              category: "Backend",
+              skills: ["Node.js", "Express", "NestJS", "Prisma", "PostgreSQL", "MongoDB"]
+            },
+            {
+              category: "Ferramentas & DevOps",
+              skills: ["Docker", "AWS", "Git / GitHub", "CI/CD", "N8N (Automação)", "Linux"]
+            },
+            {
+              category: "Conceitos",
+              skills: ["Arquitetura Limpa", "SOLID", "TDD", "REST APIs", "Web Performance", "UI/UX Design"]
+            }
+          ].map((group, idx) => (
+            <motion.div
+              key={group.category}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 + (idx * 0.1) }}
+              className="p-6 rounded-2xl border border-zinc-800/50 bg-zinc-900/10 hover:border-zinc-700/50 transition-colors"
+            >
+              <h4 className="text-emerald-500 font-mono text-xs uppercase tracking-[0.2em] mb-4">{group.category}</h4>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map(skill => (
+                  <span key={skill} className="px-3 py-1 rounded-md bg-zinc-800/40 text-zinc-300 text-xs border border-zinc-700/30">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </motion.section>
   );
 }
