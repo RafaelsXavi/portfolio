@@ -45,8 +45,7 @@ export default function Header() {
 						</Link>
 					))}
 					<a 
-						href="/curriculo.pdf" 
-						target="_blank" 
+						href="/curriculo" 
 						className="ml-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-xs font-bold text-emerald-400 hover:bg-emerald-500 hover:text-black transition-all"
 					>
 						CURRÍCULO
